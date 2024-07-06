@@ -35,6 +35,10 @@ Instructions to install and run the project locally.
 git clone https://github.com/thepasswordspoiler/Password-Generator
 cd Password-Generator
 
+
+
+
+
 ## Credits
 - Developer: @thepasswordspoiler
 
