@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4b/6q54rQi+5L3Fhnze+ZDd/xf+1Uit7eh3R+sK9N2Wi1XeXRZ4tKfUj6E4qj5WYq4ToW+7H5kKLfl8elDLPOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="wrapper">
+      <div class="input-box">
+        <input type="text" id="passwordInput" disabled>
+        <span id="copyIcon" role="button" aria-label="Copy password"><i class="far fa-copy"></i></span>
+      </div>
+      <div class="pass-indicator"></div>
+      <div class="pass-length">
+        <div class="details">
+          <label class="title">Password Length: <span id="lengthValue">15</span></label>
+        </div>
+        <input type="range" id="lengthSlider" min="1" max="30" value="15" step="1">
+      </div>
+      <div class="pass-settings">
+        <label class="title">Password Settings</label>
+        <ul class="options">
+          <li class="option">
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase" title="Include lowercase letters (a-z)">Lowercase (a-z)</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase" title="Include uppercase letters (A-Z)">Uppercase (A-Z)</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="numbers">
+            <label for="numbers" title="Include numbers (0-9)">Numbers (0-9)</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="symbols">
+            <label for="symbols" title="Include symbols (!@#$)">Symbols (!@#$)</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="avoidSimilar">
+            <label for="avoidSimilar" title="Avoid similar characters (e.g., O, 0, l, 1)">Avoid similar characters (e.g., O, 0, l, 1)</label>
+          </li>
+        </ul>
+      </div>
+      <button class="generate-btn">Generate Password</button>
+      <div class="additional-info">
+        <p>Your IP Address: <span id="ipAddress"></span></p>
+        <p>Current Time: <span id="currentTime"></span></p>
+      </div>
+    </div>
+    <footer>Developed by @thepasswordspoiler</footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
