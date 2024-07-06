@@ -32,8 +32,8 @@ This is a web-based password generator tool developed using HTML, CSS, and JavaS
 Instructions to install and run the project locally.
 
 ```bash
-git clone https://github.com/thepasswordspoiler/Project.git
-cd Project
+git clone https://github.com/thepasswordspoiler/Password-Generator
+cd Password-Generator
 
 ## Credits
 - Developer: @thepasswordspoiler
